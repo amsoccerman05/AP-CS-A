@@ -1,0 +1,21 @@
+/* Lesson 2 Coding Activity Question 2 */
+
+import java.util.Scanner;
+
+class U1_L2_Activity_Two {
+  public static void main(String[] args) {
+//has strings saved
+    Scanner scan = new Scanner(System.in);
+    Double x;
+    Double y;
+    Double z;
+    //asks question
+    System.out.println("Please input three different numbers:");
+    //get number from user input
+    x = scan.nextDouble();
+    y = scan.nextDouble();
+    z = scan.nextDouble();
+    System.out.println(z + " " + y + " " + x);   
+  }
+}
+// Passed
