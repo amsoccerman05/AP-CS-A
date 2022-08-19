@@ -1,0 +1,21 @@
+/* Lesson 4 Coding Activity Question 4 */
+
+import java.util.Scanner;
+
+class U1_L4_Activity_Four {
+  public static void main(String[] args) {
+    
+    double a = 10;
+    double b;
+    Scanner scan = new Scanner(System.in);
+    System.out.println("Enter a price:");
+    double x = scan.nextDouble();
+    b = a - x;
+    System.out.println("Change from $10: $" + b);
+
+
+
+  }
+}
+
+// Passed

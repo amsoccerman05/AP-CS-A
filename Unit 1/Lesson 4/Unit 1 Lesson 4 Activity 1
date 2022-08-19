@@ -1,0 +1,29 @@
+/* Lesson 4 Coding Activity Question 1 */
+
+import java.util.Scanner;
+
+class U1_L4_Activity_One{
+  public static void main(String[] args){
+      Scanner scan = new Scanner(System.in);
+      int x = scan.nextInt();
+      System.out.println("Please write a number (must be an integer):");
+      x++;
+      System.out.println("number is now " + x);
+      x++;
+      System.out.println("number is now " + x);
+      x++;
+      System.out.println("number is now " + x);
+      x++;
+      System.out.println("number is now " + x);
+      x--;
+      System.out.println("number is now " + x);
+      x--;
+      System.out.println("number is now " + x);
+      x--;
+      System.out.println("number is now " + x);
+      x--;
+      System.out.println("number is now " + x);      
+  }
+}
+
+// Passed

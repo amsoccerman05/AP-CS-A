@@ -1,0 +1,21 @@
+/* Lesson 3 Coding Activity Question 3 */
+
+import java.util.Scanner;
+
+public class U1_L3_Activity_Three{
+  public static void main(String[] args){
+    //booleans
+    Scanner sc = new Scanner(System.in); 
+    boolean a = true;
+    boolean c = true;
+    System.out.println("Java is an object-oriented programming language, true or false?");
+    boolean x = sc.nextBoolean();
+    System.out.println("There are only 2 possible values which can be held by a boolean variable, true or false?");
+    boolean y = sc.nextBoolean();
+    System.out.println("");
+    System.out.println("Question 1 - Your answer: " + x + ". Correct answer: " + a);
+    System.out.println("Question 2 - Your answer: " + y + ". Correct answer: " + c);
+  }
+}
+
+// Passed

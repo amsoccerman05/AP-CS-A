@@ -1,0 +1,22 @@
+/* Lesson 3 Coding Activity Question 2 */
+
+import java.util.Scanner;
+
+class U1_L3_Activity_Two {
+  public static void main(String[] args) {
+    
+    Scanner scan = new Scanner(System.in);
+    String a;
+    //ask questions, store answers
+    System.out.println("Hi there. What is your name?");
+    a = scan.nextLine();
+    System.out.println("Hi " + a + ". How much do you weigh?");
+    int num = scan.nextInt();
+    System.out.println(a + " weighs " +num + " pounds.");
+    
+  }
+}
+
+
+
+// Passed

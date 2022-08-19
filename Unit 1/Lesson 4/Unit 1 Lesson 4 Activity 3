@@ -1,0 +1,24 @@
+/* Lesson 4 Coding Activity Question 3 */
+
+import java.util.Scanner;
+
+class U1_L4_Activity_Three {
+  public static void main(String[] args) {
+    
+    Scanner scan = new Scanner(System.in);
+    // for calculations
+    double z = 3.14; //pi
+    int y = 2; //2
+    double a; //establish place for the calculations
+    double b;
+    System.out.println("Enter a circumference:");
+    double x = scan.nextDouble(); //scan for input
+    a = x / (z * y); // calculate radius
+    System.out.println("Radius: " + a);  
+    b = z * (a * a); // calculate area
+    System.out.println("Area: " + b);
+  }
+}
+
+
+// Passed
