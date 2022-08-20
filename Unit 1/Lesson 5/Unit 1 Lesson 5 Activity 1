@@ -1,0 +1,20 @@
+/* Unit 1 - Lesson 5 - Coding Activity Question 1 */
+
+import java.util.Scanner;
+
+class U1_L5_Activity_One {
+    public static void main(String[] args) {
+        int a;
+        int b;
+        int c;
+        Scanner scan = new Scanner(System.in);
+        System.out.println("Please enter a three digit number:");
+        int x = scan.nextInt();
+        System.out.println("Here are the digits:");
+        System.out.println(x / 100);
+        int y = (x/10);
+        System.out.println(y % 10);
+        System.out.println(x % 10);
+        
+    }
+}
