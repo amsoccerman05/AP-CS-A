@@ -1,0 +1,20 @@
+/* Lesson 6 Coding Activity Question 2 */
+
+import java.util.Scanner;
+
+class U1_L6_Activity_Two {
+  public static void main(String[] args) {
+    Scanner scan = new Scanner(System.in);
+    System.out.println("Please input two decimal numbers:");
+    double a = scan.nextDouble();
+    double b = scan.nextDouble();
+    double roundA = (double) (a + 0.5);
+    double roundB = (double) (b + 0.5);
+    double c = (a + b);
+    System.out.println("Answer: " + (int)a + " " + (int)b + " = " + (int)c);
+
+
+    
+     
+  }
+}
