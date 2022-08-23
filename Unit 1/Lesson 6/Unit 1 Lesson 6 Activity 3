@@ -1,0 +1,20 @@
+/* Lesson 6 Coding Activity Question 3 */
+
+import java.util.Scanner;
+
+class U1_L6_Activity_Three {
+  public static void main(String[] args) {
+    Scanner scan = new Scanner(System.in);
+    System.out.println("Please input a decimal number:");
+    double a = scan.nextDouble();
+    double b = ((double) a - (int)a);
+    int x1 = ((int) (b * 10));
+    int x2 = ((int) ((b * 100) % 10));
+    int x3 = ((int) ((b * 1000) % 10));
+    System.out.println("Answer: " + x1 + " " + x2 + " " + x3);
+
+    
+  }
+}
+
+// Passed

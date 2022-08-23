@@ -8,13 +8,15 @@ class U1_L6_Activity_Two {
     System.out.println("Please input two decimal numbers:");
     double a = scan.nextDouble();
     double b = scan.nextDouble();
-    double roundA = (double) (a + 0.5);
-    double roundB = (double) (b + 0.5);
-    double c = (a + b);
-    System.out.println("Answer: " + (int)a + " " + (int)b + " = " + (int)c);
+    int rounda = (int) (a + 0.5);
+    int roundb = (int) (b + 0.5);
+    double c = (rounda + roundb);
+    System.out.println("Answer: " + (int)rounda + " + " + (int)roundb + " = " + (int)c);
 
 
     
      
   }
 }
+
+// Passed

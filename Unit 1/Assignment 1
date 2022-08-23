@@ -1,0 +1,12 @@
+/* Assignment 1 - Calculating Grades */
+import java.util.Scanner;
+
+class Assignment1 {
+  public static void main(String[] args) {
+    Scanner scan = new Scanner(System.in);
+
+    
+    
+  }
+}
+
