@@ -3,10 +3,44 @@ import java.util.Scanner;
 
 class Assignment1 {
   public static void main(String[] args) {
+    //Scanner
     Scanner scan = new Scanner(System.in);
-
-    
+    //Strings and integer weights
+    String a;
+    double i = 0.35; // homework weight
+    double j = 0.15; // quiz weight
+    double k = 0.5; // final exam weight
+    // Questions, Recording Data
+    System.out.println("Please enter the course name."); //first question
+    a = scan.nextLine(); // get first answer
+    System.out.println("Please enter the average time spent in a week for this course in minutes."); //second question
+    int b = scan.nextInt(); // record minutes
+    System.out.println("Please enter the homework grades for this course."); //third question
+    double c = scan.nextInt(); // four grades of homework for course
+    double d = scan.nextInt();
+    double e = scan.nextInt();
+    double f = scan.nextInt();
+    System.out.println("Please enter the quiz grades for this course."); //fourth question
+    double x = scan.nextDouble();
+    double y = scan.nextDouble(); // two quiz grades
+    System.out.println("Please enter the final exam grade for this course."); //fifth question
+    double z = scan.nextDouble(); // test answer, final recorded data
+    // Do math for later on
+    int g = (b / 60); // weekly hours
+    int h = (b % 60); // remainder of hours, use for minutes
+    double x1 = ((c + d + e + f) / 4); // average homework grade
+    double y2 = ((x + y) / 2); // average quiz grade
+    double z2 = ((x1 * i) + (y2 * j) + (z * k)); // calculate final grade
+    int roundz2 = (int) (z2 +0.5);
+    // Start Outputting Data
+    System.out.println("Course name: " + a); // course name
+    System.out.println("Weekly time spent: " + g + "h" + h); // weekly time
+    System.out.println("Average homework grade: " + x1); // homework grades
+    System.out.println("Average quiz grade: " + y2); // quizzes
+    System.out.println("Final exam grade: " + z); // final exam
+    System.out.println("Overall grade: " + roundz2);
     
   }
 }
 
+// Passed

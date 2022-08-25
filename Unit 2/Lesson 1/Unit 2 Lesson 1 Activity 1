@@ -1,0 +1,17 @@
+/* Lesson 1 Coding Activity Question 1 */
+
+import java.util.Scanner;
+
+public class U2_L1_Activity_One{
+  public static void main(String[] args){
+    Scanner scan = new Scanner(System.in);
+    String a;
+    String b;
+    System.out.println("What is your name?");
+    a = scan.nextLine();
+    System.out.println("What is your favorite number?");
+    b = scan.nextLine();
+    System.out.println("Your name is " + a + " and you like the number " + b + ".");
+  }
+}
+// Passed

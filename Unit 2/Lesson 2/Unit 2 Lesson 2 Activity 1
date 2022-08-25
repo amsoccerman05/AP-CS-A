@@ -1,0 +1,25 @@
+/* Lesson 2 Coding Activity Question 1 */
+
+import java.util.Scanner;
+
+public class U2_L2_Activity_One{
+  public static void main(String[] args){
+    Scanner scan = new Scanner(System.in);
+    String a;
+    int b;
+    double x;
+    System.out.println("What type of item are you buying?");
+    a = scan.nextLine();
+    System.out.println("How many are you buying?");
+    b = scan.nextInt();
+    System.out.println("How much does each one weigh?");
+    x = scan.nextDouble();
+    double y = (b * x);
+    System.out.println(b + " " + a + " at " + x + " pounds each will weigh " + y + " pounds total");
+
+  
+  
+  }
+}
+
+// Passed
