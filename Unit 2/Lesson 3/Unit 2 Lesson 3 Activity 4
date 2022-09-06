@@ -1,0 +1,22 @@
+/* Lesson 3 Coding Activity Question 4 */
+
+import java.util.Scanner;
+
+public class U2_L3_Activity_Four
+{
+  public static void main(String[] args){
+    Scanner scan = new Scanner(System.in); 
+    //strings
+    String sentence;
+    String c;
+    //get the sentence
+    System.out.println("Enter a sentence: ");
+    sentence = scan.nextLine();
+    //index sentence
+    int b = sentence.indexOf(" ");
+    c = sentence.substring(0,b);
+    //print length
+    System.out.println(c.length());
+    
+  }
+}
