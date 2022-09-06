@@ -1,0 +1,28 @@
+import java.util.Scanner;
+ 
+public class U2_L4_Activity_One{
+  public static void main(String[] args){
+  
+    Scanner scan = new Scanner(System.in);
+    // establish strings
+    String s1;
+    String s2;
+    // get first string
+    System.out.println("Enter first string");
+    s1 =  scan.nextLine();
+    
+    // get second string
+    System.out.println("Enter second string");
+    s2 = scan.nextLine();
+    
+    //Get number of letters to use from each string
+    System.out.println("Enter number of letters from each word");
+    int n = scan.nextInt();
+ 
+    // print last n letters of first string combined with first n letters of s2
+    System.out.println(s1.substring(0,n) + s2.substring(s2.length()-n));
+  
+  }
+}
+
+// only prints back of words - fix
