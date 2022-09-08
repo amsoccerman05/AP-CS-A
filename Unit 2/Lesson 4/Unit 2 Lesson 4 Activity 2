@@ -1,0 +1,27 @@
+/* Lesson 4 Coding Activity Question 2 */
+
+import java.util.Scanner;
+
+public class U2_L4_Activity_Two{
+  public static void main(String[] args){
+    Scanner scan = new Scanner(System.in);
+    // establish strings
+    String str1;
+    String str2;
+    // Print statements
+    System.out.println("Enter a string:");
+    // more shit w strings
+    str1 = scan.nextLine();
+    // change capitalization
+    str2 = str1;
+    str1 = str1.toUpperCase();
+    str2 = str1.substring(0,1).toUpperCase() + str2.substring(1);
+    // print statements after doing capitalization
+    System.out.println(str2);
+    System.out.println(str1);
+
+
+  }
+}
+
+// Passed
