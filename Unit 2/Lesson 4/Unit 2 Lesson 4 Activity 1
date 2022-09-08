@@ -20,6 +20,7 @@ public class U2_L4_Activity_One{
     int n = scan.nextInt();
  
     // print last n letters of first string combined with first n letters of s2
+    System.out.println(s1.substring(n,0) + s2.substring(s2.length()-n));
     System.out.println(s1.substring(0,n) + s2.substring(s2.length()-n));
   
   }
