@@ -1,0 +1,26 @@
+/* Lesson 5 Coding Activity Question 3 */
+
+import java.util.Scanner;
+import shapes.*;
+
+public class U2_L5_Activity_Three
+{
+  public static void main(String[] args)
+  {
+    Scanner scan = new Scanner(System.in);
+    // numbers
+    Double a;
+    int b = 4;
+    // ask for input
+    System.out.println("Type a side length:");
+    a = scan.nextDouble();
+    // create shapes with input
+    RegularPolygon t1 = new RegularPolygon(a);
+    RegularPolygon s1 = new RegularPolygon(b,a);
+    // print shapes
+    System.out.println(t1);
+    System.out.println(s1);
+  }
+}
+
+// Passed
