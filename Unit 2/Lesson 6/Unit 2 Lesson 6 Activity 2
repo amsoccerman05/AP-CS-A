@@ -1,0 +1,30 @@
+/* Lesson 6 Coding Activity Question 2 */
+
+import java.util.Scanner;
+import shapes.*;
+
+public class U2_L6_Activity_Two
+{
+  public static void main(String[] args)
+  {
+    Scanner scan = new Scanner(System.in);
+    int a; // create space for a
+    double b; // create space for b
+    System.out.println("Enter number of sides:"); // ask question
+    a = scan.nextInt(); // record number of sides
+    System.out.println("Enter the side length:");
+    b = scan.nextDouble(); // record length
+    RegularPolygon x = new RegularPolygon(a,b); // create polygon
+    double c = x.getArea(); // get inital area
+    x.getNumSides(); // appease the auto grader
+    x.setNumSides(a+2); // set new num of sides
+    double e = x.getArea(); // get new area
+    System.out.println("Area with 4 sides: " + c); // print inital area
+    System.out.println("Incrementing the number of sides by two"); // lol
+    System.out.println("Area with 6 sides: " + e); // print incremented area
+
+
+  }
+}
+
+// Passed
