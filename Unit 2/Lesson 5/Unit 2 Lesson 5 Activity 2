@@ -1,0 +1,30 @@
+/* Lesson 5 Coding Activity Question 2 */
+
+import java.util.Scanner;
+import shapes.*;
+
+public class U2_L5_Activity_Two
+{
+  public static void main(String[] args)
+  {
+    Scanner scan = new Scanner(System.in);
+    // establishing doubles
+    double a;
+    double b;
+    double c;
+    // ask and record inputs
+    System.out.println("Type a number for length and width:");
+    a = scan.nextDouble();
+    System.out.println("Type a length:");
+    b = scan.nextDouble();
+    System.out.println("Type a width:");
+    c = scan.nextDouble();
+    // make shapes w/ inputs
+    Rectangle r1 = new Rectangle(a);
+    Rectangle r2 = new Rectangle(b,c);
+    System.out.println(r1);
+    System.out.println(r2);
+  }
+}
+
+// Passed
