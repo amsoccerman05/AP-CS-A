@@ -12,7 +12,7 @@ public class U2_L6_Activity_Two
     double b; // create space for b
     System.out.println("Enter number of sides:"); // ask question
     a = scan.nextInt(); // record number of sides
-    System.out.println("Enter the side length:");
+    System.out.println("Enter the side length:"); // lol
     b = scan.nextDouble(); // record length
     RegularPolygon x = new RegularPolygon(a,b); // create polygon
     double c = x.getArea(); // get inital area
