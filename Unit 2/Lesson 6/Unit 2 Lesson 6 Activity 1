@@ -1,0 +1,22 @@
+/* Lesson 6 Coding Activity Question 1 */
+
+import java.util.Scanner;
+import shapes.*;
+
+public class U2_L6_Activity_One
+{
+  public static void main(String[] args)
+  {
+    Scanner scan = new Scanner(System.in); // scanner
+    double a; // make space for a
+    System.out.println("Enter the radius of the circle:");
+    a = scan.nextDouble(); // record a
+    Circle x = new Circle(); // create circle
+    x.setRadius(a); // define radius
+    double c = x.getArea(); // record radius
+    double b = x.getCircumference(); // record circumference
+    System.out.println("A circle with a radius " + a + " has a circumference of " + b + " and an area of " + c);
+  }
+}
+
+// Passed
