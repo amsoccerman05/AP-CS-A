@@ -1,0 +1,22 @@
+/* Lesson 8 Coding Activity Question 1 */
+
+import java.util.Scanner;
+import testing.Math;
+
+public class U2_L8_Activity_One {
+  public static void main(String[] args) {
+    Scanner scan = new Scanner(System.in); // scanner
+    System.out.println("\"Enter a positive integer\":"); // ask first question
+    int n = scan.nextInt(); // record first response
+    int max = (n+3); // define max
+    int min = 2; // define min
+    int x =  (int) ((Math.random() * (max - min)) + min); // generate random number 1
+    int y =  (int) ((Math.random() * (max - min)) + min); // generate random number 2
+    int z =  (int) ((Math.random() * (max - min)) + min); // generate random number 3
+    System.out.println(x); // print random 1
+    System.out.println(y); // print random 2
+    System.out.println(z); // print random 3
+  }
+}
+
+// Passed

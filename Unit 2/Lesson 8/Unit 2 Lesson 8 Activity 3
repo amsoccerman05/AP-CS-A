@@ -1,0 +1,18 @@
+/* Lesson 8 Coding Activity Question 3 */
+
+import java.util.Scanner;
+
+public class U2_L8_Activity_Three
+{
+  public static void main(String[] args)
+  {
+    Scanner scan = new Scanner(System.in);
+    Double a;
+    Double b;
+    System.out.println("Enter two doubles:");
+    a = scan.nextDouble();
+    b = scan.nextDouble();
+    int c = (int) (a-b);
+    System.out.println(c);
+  }
+}

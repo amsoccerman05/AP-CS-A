@@ -1,0 +1,27 @@
+/* Lesson 8 Coding Activity Question 2 */
+
+import java.util.Scanner;
+
+public class U2_L8_Activity_Two
+{
+  public static void main(String[] args)
+  {
+    Scanner scan = new Scanner(System.in);
+    Double x1; // create x1
+    Double x2; // create x2
+    Double y1; // create y1
+    Double y2; // create y2
+    System.out.println("Enter the first x-coordinate:"); // ask for x1
+    x1 = scan.nextDouble(); // record x1
+    System.out.println("Enter the second x-coordinate:"); // ask for x2
+    x2 = scan.nextDouble(); // record x2
+    System.out.println("Enter the first y-coordinate:"); // ask for y1
+    y1 = scan.nextDouble(); // record y1
+    System.out.println("Enter the second y-coordinate:"); // ask for y2
+    y2 = scan.nextDouble(); // record y2
+    Double slope = (y2-y1)/(x2-x1); // calcuate slope
+    System.out.println("Slope: " + slope); // print slope
+  }
+}
+
+// Passed

@@ -1,0 +1,27 @@
+/* Lesson 7 Coding Activity Question 3 */
+
+import java.util.Scanner;
+import shapes.*;
+ 
+public class U2_L7_Activity_Three
+{
+  public static void main(String[] args)
+  {
+ 
+    Scanner scan = new Scanner(System.in); // scanner
+    Integer sides; // define sides, length
+    Double length;
+    System.out.println("Enter number of sides:"); // ask for input
+    sides = scan.nextInt(); // record user response
+    System.out.println("Enter side length:"); // ask for input
+    length = scan.nextDouble(); // record user response
+    RegularPolygon p1 = new RegularPolygon(sides, length); // create polygon 1
+    RegularPolygon p2 = new RegularPolygon(sides+1, length * 2); // create polygon 1, add 1 to sides and *2 length
+    Double a = p1.getArea(); // get area p1
+    Double b = p2.getArea(); // get area p2
+    System.out.println("The area of a " + p1 + " is: " + a); // prLong everything
+    System.out.println("The area of a " + p2 + " is: " + b);
+  }
+}
+
+// Passed

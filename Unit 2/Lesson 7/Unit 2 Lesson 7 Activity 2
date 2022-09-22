@@ -1,0 +1,20 @@
+import java.util.Scanner;
+
+public class U2_L7_Activity_Two
+{
+  public static void main(String[] args)
+  {
+  
+    Scanner scan = new Scanner(System.in); // scanner
+    Integer x = null; // define integers x and y
+    Integer y = null;
+    System.out.println(x + " " + y); // print inital xy value, null
+    System.out.println("Enter values:");
+    x = scan.nextInt(); // record user input for x y
+    y = scan.nextInt();
+    Double a = new Double((double)(x + y)/2); // create avg of x y, record it in value a
+    System.out.println("Average of " + x + " and " + y + " is " + a); // print out everything
+  }
+}
+
+// Passed
