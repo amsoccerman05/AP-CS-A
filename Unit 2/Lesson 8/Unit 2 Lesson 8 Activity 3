@@ -7,12 +7,9 @@ public class U2_L8_Activity_Three
   public static void main(String[] args)
   {
     Scanner scan = new Scanner(System.in);
-    Double a;
-    Double b;
     System.out.println("Enter two doubles:");
-    a = scan.nextDouble();
-    b = scan.nextDouble();
-    int c = (int) (a-b);
-    System.out.println(c);
+    int a = scan.nextInt();
+    int b = scan.nextInt();
+    System.out.println("Difference:" + Math.abs(a-b));
   }
 }
