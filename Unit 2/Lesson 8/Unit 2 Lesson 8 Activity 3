@@ -8,8 +8,12 @@ public class U2_L8_Activity_Three
   {
     Scanner scan = new Scanner(System.in);
     System.out.println("Enter two doubles:");
-    int a = scan.nextInt();
-    int b = scan.nextInt();
-    System.out.println("Difference:" + Math.abs(a-b));
+    double a = scan.nextDouble();
+    double b = scan.nextDouble();
+    int diff = (int) Math.round(a-b);
+    diff = Math.abs(diff);
+    System.out.println("Difference: " + diff);
   }
 }
+
+// Passed
