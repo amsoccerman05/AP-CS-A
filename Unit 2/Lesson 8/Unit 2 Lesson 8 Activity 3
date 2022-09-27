@@ -11,7 +11,7 @@ public class U2_L8_Activity_Three
     double a = scan.nextDouble(); // record value a
     double b = scan.nextDouble(); // record value b
     int diff = (int) Math.round(a-b); // round doubles
-    diff = Math.abs(diff); // print def
+    diff = Math.abs(diff); // make diff an absolute value
     System.out.println("Difference: " + diff); // print end result
   }
 }
