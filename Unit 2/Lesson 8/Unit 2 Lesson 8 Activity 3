@@ -7,12 +7,12 @@ public class U2_L8_Activity_Three
   public static void main(String[] args)
   {
     Scanner scan = new Scanner(System.in);
-    System.out.println("Enter two doubles:");
-    double a = scan.nextDouble();
-    double b = scan.nextDouble();
-    int diff = (int) Math.round(a-b);
-    diff = Math.abs(diff);
-    System.out.println("Difference: " + diff);
+    System.out.println("Enter two doubles:"); // ask question
+    double a = scan.nextDouble(); // record value a
+    double b = scan.nextDouble(); // record value b
+    int diff = (int) Math.round(a-b); // round doubles
+    diff = Math.abs(diff); // print def
+    System.out.println("Difference: " + diff); // print end result
   }
 }
 

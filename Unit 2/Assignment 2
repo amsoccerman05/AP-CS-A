@@ -1,0 +1,28 @@
+/* Assignment 2 - Control Tower */
+/* Class name - must be "Assignment2" in order to run */
+import java.util.Scanner;
+import assignment2.Airplane;
+
+public class Assignment2
+{
+  public static void main(String[] args)
+  {
+    Scanner scan = new Scanner(System.in); // scanner
+
+    Airplane a1 = new Airplane();
+    Airplane a2 = new Airplane("AAA02" 15.8, 128, 30000);
+    Airplane a3 = new Airplane(cs, distance, bearing, altitude);
+
+    System.out.println("Enter the details of the third airplane (call-sign, distance, bearing and altitude):");\
+    String cs = scan.nextLine().toUpperCase();
+    double distance = scan.nextDouble();
+    int bearing = scan.nextInt();
+    int altitude = scan.nextInt();
+
+    System.out.println("");
+    System.out.println("Initial Positions:");
+    System.out.println("\"Airplane 1\": " + a1);
+    System.out.println("\"Airplane 1\": " + a2);
+    System.out.println("\"Airplane 1\": " + a3);
+  }
+}
