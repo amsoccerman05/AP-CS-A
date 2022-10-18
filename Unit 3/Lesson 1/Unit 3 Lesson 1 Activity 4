@@ -1,0 +1,19 @@
+/* Lesson 1 Coding Activity Question 4 */
+
+import java.util.Scanner;
+
+public class U3_L1_Activity_Four
+{
+  public static void main(String[] args)
+  {
+    Scanner scan = new Scanner(System.in); // scanner
+    System.out.println("Please enter an integer:"); // ask for int
+    int x = scan.nextInt(); // record int
+    if (x%2 == 0) // if int divided by 2 = 0
+        System.out.println("Divisible by 2!"); // result
+    if (x%3 == 0) // if int divided by 3 = 0
+        System.out.println("Divisible by 3!");    // result
+  }
+}
+
+// Passed

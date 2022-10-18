@@ -1,0 +1,18 @@
+/* Lesson 1 Coding Activity Question 3 */
+
+import java.util.Scanner;
+
+public class U3_L1_Activity_Three
+{
+  public static void main(String[] args)
+  {
+    Scanner scan = new Scanner(System.in); // scanner
+    System.out.println("Please enter two integers:"); // ask for two ints
+    int x = scan.nextInt(); // record int1
+    int y = scan.nextInt(); // record int2
+    if (y == x*2) // test if int2 = int1*2
+        System.out.println("YES");    // result if yes
+  }
+}
+
+// Passed

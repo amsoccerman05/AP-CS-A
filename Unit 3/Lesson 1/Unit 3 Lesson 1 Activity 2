@@ -1,0 +1,17 @@
+/* Lesson 1 Coding Activity Question 2 */
+
+import java.util.Scanner;
+
+public class U3_L1_Activity_Two
+{
+  public static void main(String[] args)
+  {
+    Scanner scan = new Scanner(System.in); // scanner
+    System.out.println("Please enter an integer:"); // ask for int
+    int x = scan.nextInt(); // record int
+    if (x == 48) // see if int = number
+        System.out.println("YES");    // result if yes
+  }
+}
+
+// Passed
