@@ -1,0 +1,22 @@
+/* Lesson 2 Coding Activity Question 1 */
+
+import java.util.Scanner;
+
+public class U3_L2_Activity_One
+{
+  public static void main(String[] args)
+  {
+    Scanner scan = new Scanner(System.in); // scanner
+    System.out.println("Please enter five numbers:"); // ask question
+    double a = scan.nextDouble();    // record answers
+    double b = scan.nextDouble();    
+    double c = scan.nextDouble();    
+    double d = scan.nextDouble();    
+    double e = scan.nextDouble();    
+    double x = (a+b+c+d+e)/5; // get average, record it in X
+    if (x >= 89.95) // compare X to 89.95
+        System.out.println("ABOVE AVERAGE"); // result
+  }
+}
+
+// Passed
