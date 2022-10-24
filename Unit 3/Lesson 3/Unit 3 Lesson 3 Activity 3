@@ -1,0 +1,23 @@
+/* Lesson 3 Coding Activity Question 3 */
+
+import java.util.Scanner;
+
+public class U3_L3_Activity_Three
+{
+  public static void main(String[] args)
+  {
+    Scanner scan = new Scanner(System.in); // scanner
+    System.out.println("Please enter two integers"); // ask question
+    int x = scan.nextInt(); // record int1
+    int y = scan.nextInt(); // record int2
+    int a = (x + y); // do addition of x and y
+    System.out.println(x + " + " + y + " = ?"); // print question
+    int b = scan.nextInt(); // record answer
+    if (a == b) { // if answer = correct answer
+        System.out.println("Correct!"); // result
+    }   else { // if it doesnt
+        System.out.println("Wrong"); // result
+    }
+  }
+}
+// Passed

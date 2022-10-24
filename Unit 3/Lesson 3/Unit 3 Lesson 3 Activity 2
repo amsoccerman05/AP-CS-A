@@ -1,0 +1,28 @@
+/* Lesson 3 Coding Activity Question 2 */
+
+import java.util.Scanner;
+
+public class U3_L3_Activity_Two
+{
+  public static void main(String[] args)
+  {
+    Scanner scan = new Scanner(System.in); // scanner
+    System.out.println("Please enter a letter grade"); // ask question
+    String x = scan.nextLine(); // record string
+    if (x.equals("A")) { // if x equals A 
+        System.out.println("90-100"); // result
+    }   else if (x.equals("B")) { // if x equals B
+        System.out.println("80-90"); // result
+    }   else if (x.equals("C")) {
+        System.out.println("70-80");
+    }   else if (x.equals("D")) {
+        System.out.println("60-70");
+    }   else if (x.equals("F")) {
+        System.out.println("0-60");
+    }   else {
+        System.out.println("Invalid letter grade"); // if X equals anything not listed
+    }
+  }
+}
+
+// Passed
