@@ -1,0 +1,21 @@
+/* Lesson 4 Coding Activity Question 2 */
+
+import java.util.Scanner;
+
+public class U3_L4_Activity_Two
+{
+  public static void main(String[] args)
+  {
+    Scanner scan = new Scanner(System.in); // scanner
+    System.out.println("Enter two numbers:"); // ask question
+    int x = scan.nextInt(); // record questions
+    int y = scan.nextInt();
+    if (x >= 0 && x%2 == 0 && y >= 0 && y%2 == 0) { // bunch of if oh boi this was a mess
+            System.out.println("Both are positive and even."); // result
+        } else { // else
+          System.out.println("At least one is negative or odd."); // result
+        }
+    }
+  }
+
+  // Passed

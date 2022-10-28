@@ -1,0 +1,20 @@
+/* Lesson 4 Coding Activity Question 1 */
+
+import java.util.Scanner;
+
+public class U3_L4_Activity_One
+{
+  public static void main(String[] args)
+  {
+    Scanner scan = new Scanner(System.in); // scanner
+    System.out.println("Enter a number:"); // ask question
+    int x = scan.nextInt(); // record answer
+    if (!(x >= 65 && x <= 100)) { // if x larger than 65 and less than 100 
+      System.out.println("True"); // result
+    }   else { // else
+      System.out.println("False"); // result
+    }
+  }
+}
+
+// Passed

@@ -1,0 +1,26 @@
+/* Lesson 4 Coding Activity Question 3 */
+
+import java.util.Scanner;
+
+public class U3_L4_Activity_Three
+{
+  public static void main(String[] args)
+  {
+    Scanner scan = new Scanner(System.in); // scanner
+    System.out.println("Please enter the latitude:"); // ask for lat
+    double x = scan.nextDouble(); // record lat
+    System.out.println("Please enter the longitude:"); // ask for long
+    double y = scan.nextDouble(); // record long
+    if (x < -90 || x > 90) { // if x is out of range
+        System.out.println("latitude is incorrect"); // result
+    }
+    if (y < -180 || y > 180) { // if y is out of range
+        System.out.println("longitude is incorrect"); // result
+    }
+    if (!(x < -90 || x > 90) && !(y < -180 || y > 180)) { // if x AND y are in range
+        System.out.println("The location: " + x + ", " + y); // result
+    }
+    } 
+  }
+
+// Passed
