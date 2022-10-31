@@ -1,0 +1,21 @@
+/* Lesson 7 Coding Activity Question 1 */
+
+import java.util.Scanner;
+
+public class U3_L7_Activity_One
+{
+  public static void main(String[] args)
+  {
+    Scanner scan = new Scanner(System.in); // scanner
+    System.out.println("Enter Password:"); // ask for input
+    String a = scan.nextLine(); // record input in a
+    String password = new String("bulbasaur"); // establish password string
+    if (a.equals(password)) { // if answer = password
+        System.out.println("Access granted!"); // result
+    } else { // if it doesnt
+        System.out.println("Access denied!"); // result
+    }
+  }
+}
+
+// Passed

@@ -1,0 +1,32 @@
+/* Lesson 7 Coding Activity Question 3 */
+
+import java.util.Scanner;
+import shapes.*;
+
+public class U3_L7_Activity_Three
+{
+  public static void main(String[] args)
+  {
+    Scanner scan = new Scanner(System.in); // scanner
+
+    System.out.println("Enter the side length of the first regular polygon:");
+    double a = scan.nextDouble(); // value for first polygon
+    RegularPolygon p1 = new RegularPolygon(a); // establish polygon 1 as p1
+
+    System.out.println("Enter the number of sides of the second polygon:"); // get input 1 for p2
+    int b = scan.nextInt();
+
+    System.out.println("Enter the side length of the second polygon:"); // input 2 for p2
+    double c = scan.nextDouble();
+
+    RegularPolygon p2 = new RegularPolygon(b, c); // establish polygon 2 using b and c as p2
+    
+    if (p1.equals(p2)) { // if p1 and p2 are the same
+        System.out.println("Congruent Regular Polygons!"); // result
+    } else { // else
+        System.out.println("Different Regular Polygons"); // result
+    }
+  }
+}
+
+// Passed

@@ -1,0 +1,28 @@
+/* Lesson 7 Coding Activity Question 2 */
+
+import java.util.Scanner;
+
+public class U3_L7_Activity_Two
+{
+  public static void main(String[] args)
+  {
+    Scanner scan = new Scanner(System.in); // scanner
+    System.out.println("Enter 2 strings:"); // ask for strings
+    String a = scan.nextLine(); // store strings
+    String b = scan.nextLine();
+    if (a.equals(b)) { // if theyre the same
+        System.out.println("Equal!"); // result
+    }
+    else if (a.toUpperCase().equals(b.toUpperCase())) { // if they have different case (converts to upper case so its all the same)
+        System.out.println("Different case"); // result
+    }
+    else if (a.substring(0, a.length() - 1).equals(b.substring(0, b.length() - 1)) && a.length() == b.length()) { // if they're the same length and the same minus the last character
+        System.out.println("Close enough"); // result
+    }
+    else { // else
+        System.out.println("Try again");
+    }
+  }
+}
+
+// Passed
