@@ -1,0 +1,46 @@
+import java.util.Scanner;
+
+public class Assignment3 
+{
+
+  public static void main(String[] args) 
+  {
+    Scanner scan = new Scanner(System.in);
+    System.out.println("Welcome. What is your name?");
+    String name = scan.nextLine();
+    System.out.println("Hello "+name+". Are you ready to crack the code?");
+    String yesNo = scan.nextLine();
+    while (true){
+      if (!(yesNo.equalsIgnoreCase("yes"))){
+        break;
+      }
+      System.out.println("PHASE 1\n\rEnter a string: ");
+      String abc = scan.nextLine();
+      if (!(abc.length()==3)){
+        System.out.println("Sorry, that was incorrect!\n\rBetter luck next time!");
+        break;
+      }
+      System.out.println("Correct!\n\r");
+      System.out.println("PHASE 2\n\rEnter a number: ");
+      int num1 = scan.nextInt();
+      if (num1!=19 && !(num1>=35)||!(num1<78)){
+        System.out.println("Sorry, that was incorrect!\n\rBetter luck next time!");
+        break;
+      }
+      System.out.println("Correct!\n\r");
+      System.out.println("PHASE 3\n\rEnter a number: ");
+      int num2 = scan.nextInt();
+      if (num2<=0||(num2!=2 && (num2%2)!=0 && (num2%10)!=1)){
+        System.out.println("Sorry, that was incorrect!\n\rBetter luck next time!");
+        break;
+      }
+      System.out.println("Correct!");
+      System.out.println("You have cracked the code!");
+      break;
+    }
+    
+  }
+
+}
+
+// Passed
