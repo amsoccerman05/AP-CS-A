@@ -1,0 +1,22 @@
+/* Lesson 1 Coding Activity Question 1 */
+
+import java.util.Scanner;
+
+public class U4_L1_Activity_One
+{
+  public static void main(String[] args)
+  {
+    Scanner scan = new Scanner(System.in); // scanner
+    System.out.println("Enter any number (enter 5 to stop)"); // ask question
+    int a = 0; // establish a as 0
+    int sum = 0; // sum starts as 0
+    while (a != 5) { // while A doesn't equal 5
+        a = scan.nextInt(); // keep scanning input
+        sum += a; // what sum is
+    }
+    sum = (sum - 5); // get rid of 5
+    System.out.println("Sum is " + sum); // print final
+  }
+}
+
+// Passed

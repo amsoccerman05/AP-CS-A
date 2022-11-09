@@ -1,0 +1,22 @@
+/* Lesson 1 Coding Activity Question 3 */
+
+import java.util.Scanner;
+
+public class U4_L1_Activity_Three
+{
+  public static void main(String[] args)
+  {
+    Scanner scan = new Scanner(System.in); // scanner 
+    System.out.println("Input a word:"); // ask question
+    String word = scan.nextLine(); // declare variable
+    int index = 0; // declare variable
+    while (index < word.length()) { // while word length is alrger
+        if (index % 3 != 2) { // skip letter
+            System.out.print(word.substring(index, index + 1));
+        }
+        index += 1;
+    }
+  }
+}
+
+// Passed

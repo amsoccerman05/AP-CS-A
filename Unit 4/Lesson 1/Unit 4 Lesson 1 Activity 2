@@ -1,0 +1,25 @@
+/* Lesson 1 Coding Activity Question 2 */
+
+import java.util.Scanner;
+
+public class U4_L1_Activity_Two
+{
+  public static void main(String[] args)
+  {
+    Scanner scan = new Scanner(System.in); // scanner
+    System.out.println("Enter the Scores:"); // ask question
+
+    int score = scan.nextInt(); // declare tha variables
+    int largestScore = 0;
+
+    while (score != -1) { // if score exceeds current largest then replace current largest
+        score = scan.nextInt(); // if not, largest remains the same
+        if (largestScore < score) {
+            largestScore = score;
+        }
+    }
+    System.out.println("\nThe largest is " + largestScore); // print largest
+  }
+}
+
+// Passed
