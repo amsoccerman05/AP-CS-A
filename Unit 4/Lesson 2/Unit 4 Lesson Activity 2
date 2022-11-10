@@ -1,0 +1,25 @@
+/* Lesson 2 Coding Activity Question 2 */
+
+import java.util.Scanner;
+
+public class U4_L2_Activity_Two
+{
+  public static void main(String[] args)
+  {
+    Scanner scan = new Scanner(System.in);
+    System.out.println("Enter a positive number:");
+    int a = scan.nextInt();
+    int timesten = 1;
+    int rem = 1;
+
+    while (a > 0) {
+        rem = a % 10;
+        rem *= timesten;
+        System.out.println(rem);
+
+        timesten *= 10;
+        a = a /10;
+    }
+
+  }
+}
