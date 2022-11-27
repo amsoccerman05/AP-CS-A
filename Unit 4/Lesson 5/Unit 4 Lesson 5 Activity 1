@@ -1,0 +1,21 @@
+/* Lesson 5 Coding Activity Question 1 */
+
+import java.util.Scanner;
+
+public class U4_L5_Activity_One
+{
+  public static void main(String[] args)
+  {
+    Scanner scan = new Scanner(System.in);
+    System.out.println("Input a String:");
+    String x = scan.nextLine();
+    System.out.println("Input an integer:");
+    int y = scan.nextInt();
+    for (int i = 0; i < x.length(); i ++){
+      for (int j = 0; j < y; j ++) {
+        System.out.print((x.substring((x.length()-i -1), (x.length()-i))));
+
+  }
+}
+}
+}

@@ -1,0 +1,26 @@
+/* Lesson 3 Coding Activity Question 3 */
+
+import java.util.Scanner;
+
+public class U4_L3_Activity_Three
+{
+  public static void main(String[] args)
+  {
+    Scanner scan = new Scanner(System.in);
+    System.out.println("Enter a number between 0 and 50:");
+    int a = scan.nextInt();
+    
+    if (a <= 0 || a >= 50) {
+        System.out.println("error");
+    } else {
+        for (int i = a; i <= 50; i++) {
+            System.out.print("" + i + " ");
+            if (i % 5 == (a - 1) % 5) {
+                System.out.println();
+            }
+        }
+    }
+  }
+}
+
+// Passed
