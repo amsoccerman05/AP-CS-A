@@ -1,0 +1,73 @@
+import java.util.Scanner;
+
+class Assignment4
+{
+  public static void main(String[] args)
+  {
+       
+    /* Write your code here */
+ 
+    Scanner scan = new Scanner(System.in);
+   
+    // Declare int
+    int num = 0;
+    System.out.println("Type the message to be shortened");
+   
+    // Declaring strings
+    String word = scan.nextLine();
+    String newWord = word.toLowerCase();
+    String word1 = "";  
+    String variable = "";
+    String result = "";
+   
+    // Declaring int
+    int constant = 0;
+    int index = 0;
+    int index2 = 0;
+    int letter = 1;
+    int unique = 0;
+    int a = 0;
+
+// Nested loop
+for(int i = 0; i < newWord.length(); i++){
+   variable = (newWord.substring(i,i + 1));
+   if(i != 0 && !newWord.substring(i- 1, i).equals(" ") &&(variable.equals("a") || variable.equals("e") || variable.equals("i") || variable.equals("o") || variable.equals("u"))) {
+      num++;
+   } else if((i != 0) && (newWord.substring(i,i+ 1).equals(newWord.substring(i- 1,i))))
+   {
+    constant++;
+    } else {
+    word1 = word1 + variable;
+    }
+
+  while(a < newWord.length()) {
+  if(!(newWord.substring(a, a + 1).equals(" ")) && (newWord.substring(a, a + 1).equals(newWord.substring(i, i + 1))) && index != a) {
+    letter++;
+    }
+   a++;
+  }
+  index2 = result.indexOf(newWord.substring(i, i + 1));
+  if (index2 == -1 && (!(newWord.substring(i, i + 1).equals(" "))))
+  {
+   result += letter + newWord.substring(i, i + 1);
+   unique++;
+  }
+  a = 0;
+  index++;
+  letter = 1;
+}
+// SOP statements
+System.out.println("");
+System.out.println("Algorithm 1");
+System.out.println("Vowels removed: " + num);
+System.out.println("Repeats removed: " + constant);
+System.out.println("Algorithm 1 message: " + word1);
+System.out.println("Algorithm 1 characters saved: " + ( newWord.length() -word1.length()));
+System.out.println("");
+System.out.println("Algorithm 2");
+System.out.println("Unique characters found: " + unique);
+System.out.println("Algorithm 2 message: " + result);
+System.out.println("Algorithm 2 characters saved: " + ( newWord.length() -result.length()));
+
+}
+}
