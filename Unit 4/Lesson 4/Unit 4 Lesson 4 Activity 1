@@ -1,0 +1,24 @@
+/* Lesson 4 Coding Activity Question 1 */
+
+import java.util.Scanner;
+
+public class U4_L4_Activity_One
+{
+  public static void main(String[] args)
+  {
+    Scanner scan = new Scanner(System.in);
+    System.out.println("Input String:");
+    String u_input  = scan.nextLine();
+    String u_input1 = u_input.toLowerCase();
+   
+    int count = 0;
+    for (int i = 0; i < u_input1.length(); i++){
+      if (u_input1.substring(i, i+1).equals("p")){
+        if (u_input1.substring(i+1, i+2).equals("a") || u_input1.substring(i+1, i+2).equals("e")  || u_input1.substring(i+1, i+2).equals("i") || u_input1.substring(i+1, i+2).equals("o") || u_input1.substring(i+1, i+2).equals("u")) {
+          count++;
+        }
+      }
+    }
+    System.out.println("Contains p followed by a vowel " + count + " times.");
+  }
+}
