@@ -1,0 +1,23 @@
+/* Lesson 3 Coding Activity Question 1 */
+
+import java.util.Scanner;
+import shapes.*;
+
+public class U5_L3_Activity_One {
+    public static void makeEqTriangle(RegularPolygon regPoly) {
+        regPoly.setNumSides(3);
+    }
+
+}
+
+  /* Add the method makeEqTriangle here */
+
+  // You can uncomment and add to the main method to test your code
+  // You will need to remove/comment out this method before submitting your code
+  /*
+  public static void main(String[] args){
+
+  }
+  */
+
+// Passed

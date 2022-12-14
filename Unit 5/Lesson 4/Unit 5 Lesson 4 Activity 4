@@ -1,0 +1,29 @@
+/* Lesson 4 Coding Activity Question 4 */
+
+import java.util.Scanner;
+
+public class U5_L4_Activity_Four {
+
+    public static int substringCount(String s1, String s2) 
+    {
+      int c = 0;
+      for(int i=0; i<=s1.length()-s2.length(); i++) {
+        if(s2.equals(s1.substring(i, i+s2.length()))) {
+          c++;
+        }
+
+      }
+      return c;
+    }
+}
+  /* Add the method hasRepeat here */
+
+  // You can uncomment and add to the main method to test your code
+  // You will need to remove/comment out this method before checking your code for a score
+  /*
+  public static void main(String[] args){
+    
+  }
+  */
+
+// Passed
