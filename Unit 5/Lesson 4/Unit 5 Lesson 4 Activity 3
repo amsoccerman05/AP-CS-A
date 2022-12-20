@@ -1,7 +1,7 @@
 /* Lesson 4 Coding Activity Question 3 */
 
 import java.util.Scanner;
-import shapes.;
+import shapes.*;
 
 
 public class U5_L4_Activity_Three {
