@@ -1,0 +1,40 @@
+public class Rectangle {
+    private double base;
+    private double height;
+
+    public Rectangle() {
+        this(1, 1);
+    }
+    public Rectangle(double bs, double ht) {
+        base = bs > 0 ? bs : 1;
+        height = ht > 0 ? ht : 1;
+    }
+    public boolean equals(Rectangle other) {
+        return base == other.getBase() && height == other.getHeight();
+    }
+    public double getArea() {
+        return base * height;
+    }
+    public double getBase() {
+        return base;
+    }
+    public double getHeight() {
+        return height;
+    }
+    public double getDiagonal() {
+        return Math.sqrt(base * base + height * height);
+    }
+    public double getPerimeter() {
+        return base * 2 + height * 2;
+    }
+    public void setBase(double bs) {
+        base = bs > 0 ? bs : this.base;
+    }
+    public void setHeight(double ht) {
+        height = ht > 0 ? ht : this.height;
+    }
+    public String toString() {
+        return "rectangle with base " + base + ", height " + height;
+    }
+}
+// Passed
