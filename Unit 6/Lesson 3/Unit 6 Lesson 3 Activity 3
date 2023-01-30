@@ -1,0 +1,14 @@
+public class U6_L3_Activity_Three {
+    public static void printUn(String[] words) {
+        for (int m = 0; m < words.length; m++) {
+            String str = words[m];
+            if (str.length() > 1) {
+                String ch = str.substring(0, 2);
+                if ((ch.equals("un"))) {
+                    System.out.println(str);
+                }
+            }
+
+        }
+    }
+}

@@ -1,0 +1,11 @@
+public class U6_L2_Activity_Two {
+    // Write your numDivisibleBy3 method here
+    public static int numDivisibleBy3(int[] arr) {
+        int z = 0;
+        for (int y: arr) {
+            if (y % 3 == 0)
+                z++;
+        }
+        return z;
+    }
+}
