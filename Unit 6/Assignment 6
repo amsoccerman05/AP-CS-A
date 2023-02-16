@@ -1,0 +1,88 @@
+public class StudentStatsArray {
+
+    private final Student[] students;
+
+    public StudentStatsArray(Student[] students) {
+        this.students = students;
+    }
+    public double averageGpa() {
+        double total = 0;
+        for (Student s: students) {
+            total += s.getGpa();
+        }
+        return total / students.length;
+    }
+    public double getGpaRange() {
+        double max = 0;
+        double min = 4;
+
+        for (Student s: students) {
+            double gpa = s.getGpa();
+            max = Math.max(max, gpa);
+            min = Math.min(min, gpa);
+        }
+        return max - min;
+    }
+    public String getLongestName() {
+        String longest = "";
+        for (Student s: students) {
+            String name = s.getName();
+            if (name.length() > longest.length()) {
+                longest = name;
+            }
+        }
+        return longest;
+    }
+    public int getNumFreshman() {
+        int count = 0;
+        for (Student s: students) {
+            if (s.getYear() == 1) {
+                ++count;
+            }
+        }
+        return count;
+    }
+    public int search(String name) {
+        for (int i = 0; i < students.length; ++i) {
+            if (students[i].getName().equals(name)) {
+                return i;
+            }
+        }
+        return -1;
+    }
+    public int search(double gpa) {
+        for (int i = 0; i < students.length; i++) {
+            if (students[i].getGpa() >= gpa) {
+                return i;
+            }
+        }
+        return -1;
+    }
+    public int sortStatus() {
+        boolean increasing = true;
+        boolean decreasing = true;
+
+        for (int i = 1; i < students.length; ++i) {
+            double current = students[i].getGpa();
+            double last = students[i - 1].getGpa();
+            if (current > last) {
+                decreasing = false;
+            }
+            if (current < last) {
+                increasing = false;
+            }
+
+        }
+        return increasing ? 1 : decreasing ? -1 : 0;
+    }
+
+    public String toString() {
+
+        String result = "[\n" + students[0];
+        for (int i = 1; i < students.length; i++) {
+            result += ",\n…\n" + students[i] + ",";
+        }
+        return result + "\n]";
+    }
+
+}
