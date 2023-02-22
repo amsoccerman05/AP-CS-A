@@ -6,51 +6,55 @@ public class StudentStatsArray {
         this.students = students;
     }
     public double averageGpa() {
-        double total = 0;
-        for (Student s: students) {
-            total += s.getGpa();
+        double sum = 0;
+        for (int i = 0; i < students.length; i++) {
+            sum += students[i].getGpa();
         }
-        return total / students.length;
+        return sum / students.length;
     }
     public double getGpaRange() {
-        double max = 0;
-        double min = 4;
+        double max = students[0].getGpa();
+        double min = students[0].getGpa();
 
-        for (Student s: students) {
-            double gpa = s.getGpa();
-            max = Math.max(max, gpa);
-            min = Math.min(min, gpa);
+        double gpa;
+        for (int i = 1; i < students.length; i++) {
+            gpa = students[1].getGpa();
+            if (gpa < min) {
+                min = gpa;
+            }
+            if (gpa > max) {
+                max = gpa;
+            }
         }
         return max - min;
     }
     public String getLongestName() {
-        String longest = "";
-        for (Student s: students) {
-            String name = s.getName();
-            if (name.length() > longest.length()) {
-                longest = name;
+        String longest = students[0].getName();
+        for (int i = 1; i < students.length; i++) {
+            if (students[i].getName().length() > longest.length()) {
+                longest = students[i].getName();
             }
         }
         return longest;
     }
     public int getNumFreshman() {
         int count = 0;
-        for (Student s: students) {
-            if (s.getYear() == 1) {
-                ++count;
+        for (int i = 0; i < students.length; i++) {
+            if (students[i].getYear() == 1) {
+                count += 1;
             }
         }
         return count;
     }
     public int search(String name) {
-        for (int i = 0; i < students.length; ++i) {
+        for (int i = 0; i < students.length; i++) {
             if (students[i].getName().equals(name)) {
                 return i;
             }
         }
         return -1;
     }
-    public int search(double gpa) {
+    public int search(double gpa) { 
         for (int i = 0; i < students.length; i++) {
             if (students[i].getGpa() >= gpa) {
                 return i;
@@ -59,30 +63,38 @@ public class StudentStatsArray {
         return -1;
     }
     public int sortStatus() {
-        boolean increasing = true;
-        boolean decreasing = true;
-
-        for (int i = 1; i < students.length; ++i) {
-            double current = students[i].getGpa();
-            double last = students[i - 1].getGpa();
-            if (current > last) {
-                decreasing = false;
-            }
-            if (current < last) {
-                increasing = false;
-            }
-
+        if (isAscending()) {
+            return 1;
+        } else if (isDescending()) {
+            return -1;
+        } else {
+            return 0;
         }
-        return increasing ? 1 : decreasing ? -1 : 0;
     }
-
+    private boolean isAscending() {
+        for (int i = 1; i < this.students.length; i++) {
+            if (this.students[i - 1].getGpa() > this.students[i].getGpa()) {
+                return false;
+            }
+        }
+        return true;
+    }
+    private boolean isDescending() {
+        for (int i = 1; i < this.students.length; i++) {
+            if (this.students[i - 1].getGpa() < this.students[i].getGpa()) {
+                return false;
+            }
+        }
+        return true;
+    }
     public String toString() {
-
-        String result = "[\n" + students[0];
-        for (int i = 1; i < students.length; i++) {
-            result += ",\n…\n" + students[i] + ",";
+        string result = "[\n";
+        for (int i = 0; i < students.legnth; i++) {
+            result += students[i].toString();
+            result += ",]n";
         }
-        return result + "\n]";
+        return result.trim() + "\n]";
     }
-
 }
+
+// Passed
