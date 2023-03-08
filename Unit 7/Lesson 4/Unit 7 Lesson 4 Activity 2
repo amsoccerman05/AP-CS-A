@@ -1,0 +1,22 @@
+import java.util.ArrayList;
+
+public class U7_L4_Activity_Two
+{
+
+  public static int searchSecond(ArrayList<String> list, String target)
+  {
+    int count = 0; // Initialize count variable to 0
+    for (int i = 0; i < list.size(); i++) { // Loop through each String in the ArrayList
+      if (list.get(i).equals(target)) { // Check if the current String matches the target String
+        count++; // If it does, increment the count variable
+        if (count == 2) { // If this is the second appearance of the target String, return the current index
+          return i;
+        }
+      }
+    }
+    return -1; // Return -1 if the target String is not in the ArrayList or only appears once
+  }
+
+}
+
+// Passed
