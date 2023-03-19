@@ -3,14 +3,14 @@ import java.util.ArrayList;
 public class U7_L2_Activity_Three {
     
     public static ArrayList<Integer> getEvens(ArrayList<Integer> vals) {
-        ArrayList<Integer> evens = new ArrayList<>();
-        for (int i = 0; i < vals.size(); i++) {
-            int value = vals.get(i);
-            if (value % 2 == 0) {
-                evens.add(value);
+        ArrayList<Integer> evens = new ArrayList<>(); // Create new ArrayList to hold even values
+        for (int i = 0; i < vals.size(); i++) { // Loop through input ArrayList
+            int value = vals.get(i); // Get value at current index
+            if (value % 2 == 0) { // Check if value is even
+                evens.add(value); // Add even value to evens ArrayList
             }
         }
-        return evens;
+        return evens; // Return ArrayList of even values
     }
 }
 

@@ -2,19 +2,30 @@ import java.util.ArrayList;
 
 public class U7_L2_Activity_Two {
     
+    // Method to find the highest number in an ArrayList of integers
     public static int highestNum(ArrayList<Integer> list) {
+        
+        // Check if the list is null or empty and throw an exception if so
         if (list == null || list.isEmpty()) {
             throw new IllegalArgumentException("The list must not be null or empty");
         }
+        
+        // Initialize highest number as the first element of the list
         int highest = list.get(0);
+        
+        // Loop through the list starting from the second element
         for (int i = 1; i < list.size(); i++) {
             int current = list.get(i);
+            // If the current element is greater than the current highest, update highest to current
             if (current > highest) {
                 highest = current;
             }
         }
+        
+        // Return the highest number found
         return highest;
     }
 }
+
 
 // Passed

@@ -2,9 +2,10 @@ import java.util.ArrayList;
 
 public class U7_L3_Activity_One {
 
+  // Method that shifts the first element of an ArrayList to the end
   public static void shiftLeft(ArrayList<String> list) {
-    String first = list.remove(0);
-    list.add(first);
+    String first = list.remove(0); // Remove the first element and save it in a temporary variable
+    list.add(first); // Add the temporary variable (the original first element) to the end of the ArrayList
   }
 
 }

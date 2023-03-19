@@ -8,21 +8,28 @@ public class U7_L1_Activity_One
   {
     Scanner scan = new Scanner(System.in);
     ArrayList<String> list = new ArrayList<String>();
+
+    // Prompt user to enter words, stop when "STOP" is entered
     System.out.println("Please enter words, enter STOP to stop the loop.");
     String input = scan.nextLine();
     while(!(input.equals("STOP"))) {
         list.add(input);
         input = scan.nextLine();
     }
+
+    // Print size and contents of ArrayList
     System.out.println(list.size());
     System.out.println(list);
 
+    // If ArrayList has more than 2 elements, swap first and last elements
     if(list.size() > 2) {
-        String temp = list.get(0);
-        list.remove(0);
+        String temp = list.get(0); // Save first element in temporary variable
+        list.remove(0); // Remove first element from ArrayList
         int t = list.size() - 1;
-        list.set(t, temp);
+        list.set(t, temp); // Set last element to the value of the temporary variable
     }
+
+    // Print modified ArrayList
     System.out.println(list);
   }
 
