@@ -31,3 +31,5 @@ public class SpecialityCoffee extends Coffee {
     return super.toString() + " with " + flavor;
   }
 }
+
+// Passed
