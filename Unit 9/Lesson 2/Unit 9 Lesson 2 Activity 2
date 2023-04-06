@@ -43,3 +43,5 @@ public class DoubleCone extends Cone {
     }
 
 }
+
+// Passed
