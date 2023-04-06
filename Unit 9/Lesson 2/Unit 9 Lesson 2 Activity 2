@@ -1,0 +1,45 @@
+public class DoubleCone extends Cone {
+
+    private String flavor;
+    private String flavor2;
+    private String topping;
+
+    public DoubleCone(String f, boolean w) {
+        super(f, w);
+        flavor = f;
+        flavor2 = f;
+    }
+
+    public DoubleCone(String f, String f2, boolean w) {
+        super(f, w);
+        flavor = f;
+        flavor2 = f2;
+    }
+
+    public void setFlavor(String f) {
+        super.setFlavor(f);
+        flavor = f;
+        flavor2 = f;
+    }
+    public void setFlavor(String f, String f2) {
+        super.setFlavor(f);
+        flavor = f;
+        flavor2 = f2;
+    }
+    public void addTopping(String t) {
+        topping = t;
+    }
+    public String toString() {
+        String s = "double " + super.toString();
+        if (flavor.equals(flavor2)) {
+            s += " x2";
+        } else {
+            s += " and " + flavor2;
+        }
+        if (!topping.equals("")) {
+            s += " with " + topping;
+        }
+        return s;
+    }
+
+}
