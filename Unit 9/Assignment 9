@@ -1,0 +1,122 @@
+// these are seperate classes for assignment nine
+
+// Person class
+
+import java.util.ArrayList;
+class Person {
+    private String firstName;
+    private String lastName;
+    public Person(String firstName, String lastName) {
+        this.firstName = firstName;
+        this.lastName = lastName;
+    }
+    public int throwDisc(int pow) {
+        pow = Math.max(pow, 1);
+        pow = Math.min(pow, 10);
+        return pow * 2;
+    }
+    public String toString() {
+        return lastName + ", " + firstName;
+    }
+}
+
+// Coach Class
+class Coach extends Person {
+    private String role;
+    public Coach(String firstName, String lastName, String role) {
+        super(firstName, lastName);
+        this.role = role;
+    }
+
+    public String toString() {
+        return super.toString() + "\n   Role: " + role;
+    }
+}
+
+
+
+/*Ultimate Team Class w/ Override toString*/
+
+// Don't forget, you will need to import the ArrayList class to implement the UltimateTeam class
+import java.util.ArrayList;
+public class UltimateTeam {
+    private ArrayList < UltimatePlayer > players;
+    private ArrayList < Coach > coaches;
+    public UltimateTeam(ArrayList < UltimatePlayer > players, ArrayList < Coach > coaches) {
+        this.players = players;
+        this.coaches = coaches;
+    }
+    public String getCutters() {
+        StringBuilder result = new StringBuilder();
+        for (UltimatePlayer player: players) {
+            if (player.getPosition().equals("cutter")) {
+                result.append(player.toString()).append("\n");
+            }
+        }
+        return result.toString();
+    }
+    public String getHandlers() {
+        StringBuilder result = new StringBuilder();
+        for (UltimatePlayer player: players) {
+            if (player.getPosition().equals("handler")) {
+                result.append(player.toString()).append("\n");
+            }
+        }
+        return result.toString();
+    }
+    @Override
+    public String toString() {
+        StringBuilder result = new StringBuilder("COACHES\n");
+        for (Coach coach: coaches) {
+            result.append(coach.toString()).append("\n");
+        }
+        result.append("\nPLAYERS\n");
+        for (UltimatePlayer player: players) {
+            result.append(player.toString()).append("\n");
+        }
+        return result.toString();
+    }
+}
+
+
+// Captain Class
+
+class Captain extends UltimatePlayer {
+    private boolean type;
+    public Captain(String firstName, String lastName, String position, boolean type) {
+        super(firstName, lastName, position);
+        this.type = type;
+    }
+    public int throwDisc(int pow) {
+        pow = Math.max(pow, 1);
+        pow = Math.min(pow, 10);
+        return pow * 5;
+    }
+    public String toString() {
+        return super.toString() + "\n   Captain: " + (type ? "offense" : "defense");
+    }
+}
+
+// Ultimate Player Class
+
+class UltimatePlayer extends Person {
+    private static int jerseyNumberCounter = 1;
+    private int jerseyNumber;
+    private String position;
+    public UltimatePlayer(String firstName, String lastName, String position) {
+        super(firstName, lastName);
+        this.position = position.equals("handler") || position.equals("cutter") ? position : "handler";
+        this.jerseyNumber = jerseyNumberCounter++;
+    }
+    public String getPosition() {
+        return position;
+    }
+    public int throwDisc(int pow) {
+        pow = Math.max(pow, 1);
+        pow = Math.min(pow, 10);
+        return pow * 4;
+    }
+    public String toString() {
+        return super.toString() + "\n   Jersey #: " + jerseyNumber + "\n   Position: " + position;
+    }
+}
